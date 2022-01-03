@@ -1,7 +1,7 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import homeLogo from "../../Assets/developer-home.jpg";
-import Home2 from "./Home2";
+import myImg from "../../Assets/sunil.jpeg";
+import SocialMedia from "../SocialMedia";
 import Type from "./Type";
 
 function Home() {
@@ -12,7 +12,10 @@ function Home() {
           <Row>
             <Col md={6} className="home-header">
               <h1 style={{ paddingBottom: 15 }} className="heading">
-                Hi There! <span className="wave" role="img" aria-labelledby="wave">👋🏻</span>
+                Hi There!{" "}
+                <span className="wave" role="img" aria-labelledby="wave">
+                  👋🏻
+                </span>
               </h1>
 
               <h1 className="heading-name">
@@ -20,18 +23,41 @@ function Home() {
                 <strong className="main-name"> Sunil Yadav</strong>
               </h1>
 
-              <div style={{ padding: 50, textAlign: "left" }}>
+              <p className="heading-description blockquote">
+                I am passionate about using Javascript and Animation Libraries
+                to create awesome user experiences. With over five years of
+                experience developing web applications using the latest
+                front-end and back-end technologies.
+              </p>
+
+              <div className="heading-type">
                 <Type />
               </div>
             </Col>
 
-            <Col md={5} style={{ paddingBottom: 20, paddingRight: 50}}>
-              <img src={homeLogo} alt="home pic" className="img-fluid" />
+            <Col md={5}>
+              <img src={myImg} className="profile-pic" alt="avatar" />
             </Col>
           </Row>
         </Container>
       </Container>
-      <Home2 />
+      <Container fluid className="home-about-section" id="about">
+        <Container>
+          <Row>
+            <Col md={12} className="home-about-social">
+              <h1>Get in Touch</h1>
+              <p>
+                {" "}
+                Whether you want to get in touch, or talk about a project
+                collaboration.
+                <br />
+                <strong>Feel free to connect with me</strong>
+              </p>
+              <SocialMedia />
+            </Col>
+          </Row>
+        </Container>
+      </Container>
     </section>
   );
 }

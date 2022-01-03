@@ -1,6 +1,6 @@
 import React from "react";
 import Card from "react-bootstrap/Card";
-import { ImPointRight, } from "react-icons/im";
+import { ImPointRight } from "react-icons/im";
 function AboutCard() {
   return (
     <Card className="quote-card-view">
@@ -9,7 +9,12 @@ function AboutCard() {
           <p style={{ textAlign: "justify" }}>
             Hi Everyone, I am <span className="purple">Sunil Yadav </span>
             from <span className="purple"> Lucknow, India.</span>
-            <br />I am a working as senior software engineer in Tech Mahindra
+            <br />
+            Software Engineer who loves to transform ideas into reality using
+            code.
+            <br />
+            Motivated designer and developer with experience creating
+            custom websites with ReactJs, JavaScript, HTML5, and CSS3.
             <br />
             Apart from coding, some other activities that I love to do!
           </p>
@@ -22,6 +27,9 @@ function AboutCard() {
             </li>
             <li className="about-activity">
               <ImPointRight /> Travelling
+            </li>
+            <li className="about-activity">
+              <ImPointRight /> Watching Movie
             </li>
           </ul>
         </blockquote>

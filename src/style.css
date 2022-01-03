@@ -16,6 +16,7 @@ html {
 
 .purple {
   color: var(--imp-text-color) !important;
+  font-weight: bold;
 }
 
 /* --------- */
@@ -268,14 +269,22 @@ html {
   text-align: left;
 }
 
+.heading-description {
+  margin-left: 20px !important;
+}
+.heading-type {
+  padding-left: 15px;
+  text-align: "left";
+}
+
 .heading {
   font-size: 2.4em !important;
-  padding-left: 50px !important;
+  padding-left: 20px !important;
 }
 
 .heading-name {
   font-size: 2.5em !important;
-  padding-left: 45px !important;
+  padding-left: 20px !important;
 }
 
 .main-name {
@@ -350,14 +359,15 @@ html {
 .home-social-icons {
   position: relative !important;
   display: inline-block !important;
-  width: 40px !important;
-  height: 40px !important;
+  width: 60px !important;
+  height: 60px !important;
   text-align: center !important;
   font-size: 1.2em !important;
   line-height: 2em !important;
-  background: rgba(255, 255, 255, 0.972) !important;
+  background: #343e47 !important;
   border-radius: 50% !important;
   transition: 0.5s !important;
+  border: 1px solid #343e47;
 }
 
 .home-social-icons::before {
@@ -368,7 +378,7 @@ html {
   width: 100%;
   height: 100%;
   border-radius: 50%;
-  background: #68187a;
+  background: #5b585c;
   transition: 0.5s;
   transform: scale(0.9);
   z-index: -1;
@@ -387,12 +397,16 @@ html {
 
 .social-icons {
   display: inline-block !important;
-  padding-right: 15px;
   padding-left: 15px;
+  height: 60px;
 }
 
 .icon-colour {
-  color: #414141 !important;
+  color: #ffffff !important;
+}
+
+.social-icon {
+  margin-top: 10px;
 }
 
 /* --------- */
@@ -401,11 +415,11 @@ html {
 .footer {
   background-color: #343e47;
   bottom: 0 !important;
-  padding-top: 10px !important;
-  padding-bottom: 8px !important ;
+  /* padding-top: 20px !important; */
 }
 .footer-copywright {
   text-align: center !important;
+  margin-top: 20px;
 }
 
 .footer-body {
@@ -542,7 +556,7 @@ html {
 
 .about-section {
   position: relative !important;
-  padding-top: 150px !important;
+  padding-top: 100px !important;
   padding-bottom: 30px !important;
   background-image: var(--section-background-color) !important;
   color: #414141 !important;
@@ -762,6 +776,12 @@ html {
 }
 .profile-pic{
   border-radius: 50%;
-  height: 100%;
-  width: 100%;
+  height: 70%;
+  width: 65%;
+  margin-top: 12%;
+  margin-left: 25%;
+}
+.image-style {
+  height: 85%;
+  width: 85%;
 }
