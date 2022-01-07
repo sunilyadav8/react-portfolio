@@ -14,7 +14,8 @@ function AboutCard() {
             code.
             <br />
             Motivated designer and developer with experience creating
-            custom websites with ReactJs, JavaScript, HTML5, and CSS3.
+            custom websites with ReactJs, JavaScript, HTML5, CSS3. Shopify app using ReactJs, Javascript, Polaris, Graphql, nodejs, Koajs
+            and Mobile App using React-native.
             <br />
             Apart from coding, some other activities that I love to do!
           </p>

@@ -2,7 +2,7 @@ import React from "react";
 import Loader from "react-loader-spinner";
 import "react-loader-spinner/dist/loader/css/react-spinner-loader.css";
 
-function Pre(props) {
+function Preloader(props) {
   return (
     <div id={props.load ? "preloader" : "preloader-none"}>
       <Loader
@@ -15,4 +15,4 @@ function Pre(props) {
   );
 }
 
-export default Pre;
+export default Preloader;

@@ -3,27 +3,8 @@ import { Container, Row, Col } from "react-bootstrap";
 import Techstack from "./Techstack";
 import Aboutcard from "./AboutCard";
 import developer from "../../Assets/developer.jpg";
+import { SKILLS, TOOLS } from "../../Constants";
 
-const skills = [
-  { name: "ReactJs", initialRating: 4 },
-  { name: "React-Native", initialRating: 4 },
-  { name: "JavaScript", initialRating: 4 },
-  { name: "Redux", initialRating: 4 },
-  { name: "Shopify/Reactjs", initialRating: 4 },
-  { name: "Nodejs", initialRating: 3 },
-  { name: "Koajs", initialRating: 3 },
-  { name: "Html", initialRating: 4 },
-  { name: "CSS", initialRating: 4 },
-  { name: "Unit-Testing(Jest)", initialRating: 3 },
-  { name: "TypeScript", initialRating: 4 },
-  { name: "Graphql", initialRating: 4 },
-  { name: "Apollo", initialRating: 4 },
-  { name: "AntD | ReactStrap | Material UI", initialRating: 4 },
-  { name: "Shopify Polaris", initialRating: 4 },
-  { name: "Git", initialRating: 4 },
-];
-
-const tools = ["Visual Studio Code", "Git", "Chrome DevTools", "Npm (Node Package Manager)", "Atom", "Sublime Text", "Linux", "Heroku", "Postman"]
 function About() {
   return (
     <Container fluid className="about-section">
@@ -38,24 +19,20 @@ function About() {
             }}
           >
             <h1 style={{ fontSize: "2.1em", paddingBottom: "20px" }}>
-               <strong className="purple">About Me</strong>
+              <strong className="purple">About Me</strong>
             </h1>
             <Aboutcard />
           </Col>
-          <Col
-            md={5}
-            style={{ paddingBottom: "50px" }}
-            className="about-img"
-          >
+          <Col md={5} style={{ paddingBottom: "50px" }} className="about-img">
             <img src={developer} alt="about" className="image-style" />
           </Col>
         </Row>
-        <Row>
+        <Row className="skill-tools-wrapper">
           <Col className="skill-wrapper">
             <h1 className="project-heading">
               Professional <strong className="purple">Skillset </strong>
             </h1>
-            {skills.map((skill, index) => (
+            {SKILLS.map((skill, index) => (
               <Techstack
                 name={skill.name}
                 initialRating={skill.initialRating}
@@ -67,7 +44,7 @@ function About() {
             <h1 className="project-heading">
               <strong className="purple">Tools</strong> I use
             </h1>
-            {tools.map((skill, index) => (
+            {TOOLS.map((skill, index) => (
               <ul key={index} className="skill-name">
                 <li>{skill}</li>
               </ul>
