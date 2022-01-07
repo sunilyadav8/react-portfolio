@@ -304,7 +304,7 @@ html {
 @media (max-width: 767px) {
   .Typewriter__wrapper {
     font-size: 1.4em !important;
-    font-weight: 500 !important;
+    font-weight: 600 !important;
     position: absolute !important;
   }
   .Typewriter__cursor {
@@ -330,7 +330,7 @@ html {
 }
 
 .home-about-description {
-  color: #414141  !important;
+  color: #414141 !important;
   padding-top: 100px !important;
   padding-bottom: 20px !important;
   text-align: center;
@@ -449,7 +449,7 @@ html {
 }
 
 .blockquote-footer {
-  color: #414141  !important;
+  color: #414141 !important;
   font-weight: bold;
 }
 /* --------- */
@@ -481,7 +481,7 @@ html {
 .project-card-view:hover {
   transform: scale(1.02) !important;
   overflow: hidden !important;
-  box-shadow: 0 4px 4px 5px #343e47  !important;
+  box-shadow: 0 4px 4px 5px #343e47 !important;
 }
 
 .blog-card {
@@ -774,14 +774,27 @@ html {
 .download-button:hover {
   background-color: #000000 !important;
 }
-.profile-pic{
+.image-style {
+  height: 85%;
+  width: 90%;
+}
+.project-title {
+  font-weight: bold;
+}
+.profile-pic {
   border-radius: 50%;
   height: 70%;
   width: 65%;
   margin-top: 12%;
   margin-left: 25%;
 }
-.image-style {
-  height: 85%;
-  width: 85%;
-}
+
+@media (max-width: 767px) {
+  .profile-pic {
+    border-radius: 50%;
+    height: 80%;
+    width: 50%;
+    margin-top: 12%;
+    margin-left: 25%;
+  }
+  }
