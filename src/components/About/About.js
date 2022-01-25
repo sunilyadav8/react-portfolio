@@ -44,9 +44,9 @@ function About() {
             <h1 className="project-heading">
               <strong className="purple">Tools</strong> I use
             </h1>
-            {TOOLS.map((skill, index) => (
-              <ul key={index} className="skill-name">
-                <li>{skill}</li>
+            {TOOLS.map((tool, index) => (
+              <ul key={index} className="tool-name">
+                <li>{tool}</li>
               </ul>
             ))}
           </Col>
